@@ -1,0 +1,20 @@
+[
+  {
+    "date": "31/02/2024",
+    "description": "Posto",
+    "price": 100.0,
+    "type": "saída"
+  },
+  {
+    "date": "05/08/2024",
+    "description": "Salário",
+    "price": 2000.0,
+    "type": "entrada"
+  },
+  {
+    "date": "01/09/2024",
+    "description": "Mercado",
+    "price": 124.0,
+    "type": "saída"
+  }
+]

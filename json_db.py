@@ -1,4 +1,4 @@
-from lancamentos import Lancamento
+from releases import Releases
 from pydantic import BaseModel # type: ignore
 import json
 
@@ -13,9 +13,9 @@ class JsonDB(BaseModel):
         return data
 
 
-    def insert(self, lancamento: Lancamento):
+    def insert(self, release: Releases):
         data = self.read_Json()
-        data.append(lancamento.dict())
+        data.append(release.dict())
 
         file = open(self.path, "w", encoding="utf-8")
         file.write(json.dumps(data, ensure_ascii=False))
